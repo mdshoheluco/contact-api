@@ -4,7 +4,7 @@ import AuthRoute from "./routes/Auth";
 import UsersRoute from "./routes/Users";
 import ContactsRoute from "./routes/Contacts";
 
-const port = process.env.PORT | 5000;
+const port = process.env.PORT | 6000;
 
 // Connect to the database
 dbConnect();
