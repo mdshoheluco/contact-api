@@ -5,6 +5,15 @@ import Contact from "../models/Contacts";
 
 const router = express.Router();
 
+/**
+ * @swagger
+ * /api/contacts:
+ *  get:
+ *    description: Used to get all the contacts
+ *    responses:
+ *      '200':
+ *        description: A successful response
+ */
 router.get("/", Auth, async (req, res, next) => {
   try {
     const contacts = await Contact.find({ user: req.user.id });
